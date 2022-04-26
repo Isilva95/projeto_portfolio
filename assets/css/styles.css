@@ -16,8 +16,9 @@ header {
   top: 0;
 }
 header .logo {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
+  color: #FFFFFF;
 }
 header .menu {
   width: 30px;
@@ -38,9 +39,66 @@ header .menu-line {
 }
 .container .leftside {
   flex: 1;
-  background-color: #00FF00;
+  background-color: #3B576D;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 .container .rightside {
   flex: 1;
-  background-color: #FF0000;
+  background-image: url('../images/hero.jpg');
+  background-size: 100% auto;
+  background-position: center;
+}
+.container .info {
+  color: #FFFFFF;
+}
+.container .info .profession {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.container .info .name {
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.container .info .buttons a {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #3B576D;
+  padding: 20px 40px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #111111;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.container .info .buttons a.ligths {
+  background-color: #3B576D;
+  color: #FFFFFF;
+}
+.container .info .buttons a:hover {
+  opacity: 0.8;
+}
+
+/* CSS - Rodapé */
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer a:hover {
+  text-decoration: underline;
 }
