@@ -47,7 +47,7 @@ header .menu-line {
 .container .rightside {
   flex: 1;
   background-image: url('../images/hero.jpg');
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
 }
 .container .info {
@@ -101,4 +101,27 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+
+
+/* CSS - Responsividade */
+@media (max-width: 850px) {
+
+  header {
+    position: initial;
+    background-color: #3B576D;
+  }
+  header .menu-line {
+    background-color: #FFFFFF;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  .container .leftside {
+    flex: none;
+    padding: 30px 20px;
+    justify-content: center;
+    text-align: center;
+  }
 }
