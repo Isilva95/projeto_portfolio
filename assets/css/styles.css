@@ -104,8 +104,9 @@ footer a:hover {
 }
 
 
-/* CSS - Responsividade */
+/* CSS - Responsividade - Tablet */
 @media (max-width: 850px) {
+
 
   header {
     position: initial;
@@ -123,5 +124,28 @@ footer a:hover {
     padding: 30px 20px;
     justify-content: center;
     text-align: center;
+  }
+
+  footer {
+    position: initial;
+    color: #333333;
+    font-size: 16px;
+  }
+  footer a {
+    color: #333333;
+  }
+}
+
+/* CSS - Responsividade - Mobile */
+@media (max-width: 450px) {
+
+  .container .leftside .info .name {
+    font-size: 50px;
+  }
+  .container .leftside .info .buttons a {
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
   }
 }
